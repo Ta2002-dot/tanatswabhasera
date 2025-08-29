@@ -40,7 +40,17 @@ export default function Index() {
             </div>
           </div>
           <aside className="lg:col-span-1">
-            <div className="rounded-2xl border bg-card p-6 shadow-sm">
+            <div className="mx-auto w-full max-w-sm">
+              <div className="relative overflow-hidden rounded-3xl border bg-gradient-to-b from-primary/10 to-background p-2 shadow-sm">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2613a1521c4d42c5a11a66e7e7380c36?format=webp&width=800"
+                  alt="Tanatswa Bhasera portrait"
+                  className="mx-auto block h-auto w-full object-contain drop-shadow-xl"
+                  loading="eager"
+                />
+              </div>
+            </div>
+            <div className="mt-6 rounded-2xl border bg-card p-6 shadow-sm">
               <h3 className="text-lg font-semibold">Quick Facts</h3>
               <ul className="mt-4 grid gap-3 text-sm">
                 <li className="flex items-start gap-3"><span className="mt-1 h-2 w-2 rounded-full bg-primary"/>Zimbabwean • Single</li>
