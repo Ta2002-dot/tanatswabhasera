@@ -4,7 +4,8 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden bg-gradient-to-b from-white to-slate-100">
+    <div className="dark min-h-screen flex flex-col relative overflow-hidden glossy-bg">
+      <div className="glossy-overlay" />
       <Header />
       <main className="flex-1">
         <Outlet />
