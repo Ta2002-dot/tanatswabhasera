@@ -7,20 +7,25 @@ export default function Index() {
     <div id="top">
       {/* Hero */}
       <section
-        className="relative overflow-hidden border-b border-black/10 bg-gradient-to-b from-white to-slate-100"
+        className="relative overflow-hidden border-b border-white/10"
+        style={{
+          backgroundImage:
+            "radial-gradient(900px 500px at -10% 110%, rgba(239,68,68,0.15) 0%, rgba(239,68,68,0) 55%), radial-gradient(900px 500px at 110% -10%, rgba(239,68,68,0.12) 0%, rgba(239,68,68,0) 55%)",
+          backgroundColor: "#0b1220",
+        }}
       >
         <div className="container mx-auto grid gap-6 py-16 sm:py-20 lg:grid-cols-3 lg:gap-10">
-          <div className="lg:col-span-2 pr-3 mr-5 bg-white/80 border border-black/10 shadow p-6 rounded-2xl">
+          <div className="lg:col-span-2 pr-3 mr-5 glass-dark p-6 rounded-3xl">
             <p className="text-sm font-medium tracking-tight">Hello, I’m</p>
             <h1 className="mt-2 text-5xl sm:text-6xl font-extrabold leading-tight font-display">Tanatswa Bhasera</h1>
             <p className="mt-4 text-base sm:text-lg text-foreground/80 max-w-2xl">
               Dedicated and performance-driven Information Technology professional with proven experience in IT operations, support, and systems management. I provide services in software development, networking, system administration, cybersecurity, and IT support, helping organizations optimize efficiency and security. Known for reliability, strong problem-solving capabilities, and a passion for advancing technology, I specialize in delivering practical and innovative solutions tailored to organizational needs.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
-              <Button asChild className="bg-[rgba(190,186,167,1)] hover:bg-[rgba(190,186,167,0.9)] text-slate-900">
+              <Button asChild className="bg-primary hover:bg-primary/90 text-white">
                 <a href="mailto:bhaseratanatswa30@gmail.com" aria-label="Say Hello">Say Hello!</a>
               </Button>
-              <Button asChild variant="secondary" className="bg-[rgba(245,155,10,0.46)] hover:bg-[rgba(245,155,10,0.65)] text-slate-50">
+              <Button asChild variant="outline" className="border-slate-500 text-slate-100 hover:bg-white/10">
                 <a href="https://cdn.builder.io/o/assets%2F151040adad4644778a8544b549b97ad5%2Fa5ab4c6b237f433a9afb8e882da4bcf4?alt=media&token=20fc5235-bb6e-4636-b115-ca18f9d1d4f1&apiKey=151040adad4644778a8544b549b97ad5" target="_blank" rel="noreferrer" aria-label="Download CV"><Download className="mr-2 h-4 w-4"/>Download CV</a>
               </Button>
             </div>
@@ -34,7 +39,7 @@ export default function Index() {
           </div>
           <aside className="lg:col-span-1">
             <div className="mx-auto w-full max-w-sm">
-              <div className="relative mx-auto aspect-square max-w-[320px] overflow-hidden rounded-full border border-black/10 bg-white p-2 shadow-lg">
+              <div className="relative mx-auto aspect-square max-w-[320px] overflow-hidden rounded-full border bg-gradient-to-b from-primary/10 to-background p-2 shadow-lg ring-1 ring-primary/20">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2807a407e777435e8d518e17cdef0b89?format=webp&width=800"
                   alt="Tanatswa Bhasera portrait"
@@ -44,7 +49,7 @@ export default function Index() {
                 />
               </div>
             </div>
-            <div className="mt-6 bg-white/80 border border-black/10 rounded-2xl p-6 shadow">
+            <div className="mt-6 clay-card p-6">
               <h3 className="text-lg font-semibold">Quick Facts</h3>
               <ul className="mt-4 grid gap-3 text-sm">
                 <li className="flex items-start gap-3"><span className="mt-1 h-2 w-2 rounded-full bg-primary"/>Zimbabwean • Single</li>
