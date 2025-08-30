@@ -3,27 +3,26 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const NAV = [
   { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
-  { href: "#education", label: "Education" },
   { href: "#skills", label: "Skills" },
-  { href: "#references", label: "References" },
+  { href: "#projects", label: "Projects" },
+  { href: "#services", label: "Services" },
   { href: "#contact", label: "Contact" },
 ];
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full glass shadow-md">
-      <div className="container mx-auto flex h-16 items-center justify-between">
-        <a href="#top" className="flex items-baseline gap-2" aria-label="Go to top" />
+    <header className="sticky top-0 z-40 w-full bg-white/80 backdrop-blur border-b">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <a href="#top" className="flex items-baseline gap-2" aria-label="Go to top">
+          <span className="text-lg font-bold tracking-tight text-foreground">Tanatswa</span>
+          <span className="hidden sm:inline text-sm text-muted-foreground">IT Professional</span>
+        </a>
         <nav className="hidden md:flex items-center gap-6">
           {NAV.map((n) => (
             <a
               key={n.href}
               href={n.href}
-              className={
-                "text-sm font-medium text-muted-foreground hover:text-foreground transition-colors " +
-                (n.href === "#contact" ? "ml-[7px]" : "")
-              }
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {n.label}
             </a>
@@ -42,7 +41,7 @@ export default function Header() {
             <MapPin className="h-4 w-4" /> Harare, Zimbabwe
           </span>
           <Button asChild size="sm">
-            <a href="#contact">Hire Me</a>
+            <a href="#contact">Contact</a>
           </Button>
         </div>
       </div>
