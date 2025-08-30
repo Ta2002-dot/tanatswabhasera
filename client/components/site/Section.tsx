@@ -8,7 +8,9 @@ interface SectionProps extends PropsWithChildren {
 
 export default function Section({ id, title, description, children }: SectionProps) {
   return (
-    <section id={id} className="scroll-mt-24 py-12 sm:py-16">
+    <section id={id} className="relative scroll-mt-24 py-12 sm:py-16">
+      <div className="pointer-events-none absolute -left-24 top-10 h-40 w-40 bubble bubble-red opacity-40 hidden md:block -z-10" />
+      <div className="pointer-events-none absolute -right-16 bottom-8 h-24 w-24 bubble bubble-red opacity-30 hidden md:block -z-10" />
       <div className="container mx-auto">
         {title && (
           <div className="mb-6 sm:mb-8 rounded-2xl p-4 bg-white/70 backdrop-blur border border-black/10 shadow-sm">
