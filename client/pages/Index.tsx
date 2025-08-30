@@ -7,15 +7,15 @@ export default function Index() {
     <div id="top">
       {/* Hero */}
       <section
-        className="relative overflow-hidden border-b"
+        className="relative overflow-hidden border-b border-white/10"
         style={{
           backgroundImage:
-            "radial-gradient(circle at 12% 100%, rgba(255,226,176,0.96) 1%, rgba(255,226,176,0) 40%), radial-gradient(circle at 95% -15%, rgba(218,77,241,0.35) 5%, rgba(218,77,241,0) 40%), radial-gradient(100% 100% at 100% 50%, rgba(196,245,233,0.5) 2%, rgba(196,245,233,0) 35%)",
-          backgroundColor: "#fff",
+            "radial-gradient(1200px 600px at 0% 100%, rgba(14,20,35,0.85) 0%, rgba(14,20,35,0) 60%), radial-gradient(1000px 500px at 100% 0%, rgba(8,12,24,0.85) 0%, rgba(8,12,24,0) 60%)",
+          backgroundColor: "#0b1220",
         }}
       >
         <div className="container mx-auto grid gap-6 py-16 sm:py-20 lg:grid-cols-3 lg:gap-10">
-          <div className="lg:col-span-2 pr-3 mr-5">
+          <div className="lg:col-span-2 pr-3 mr-5 glass-dark p-6 rounded-2xl">
             <p className="text-sm font-medium tracking-tight">Hello, I’m</p>
             <h1 className="mt-2 text-5xl sm:text-6xl font-extrabold leading-tight font-display">Tanatswa Bhasera</h1>
             <p className="mt-4 text-base sm:text-lg text-foreground/80 max-w-2xl">
