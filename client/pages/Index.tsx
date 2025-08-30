@@ -15,34 +15,11 @@ export default function Index() {
         }}
       >
         <div className="container mx-auto grid gap-6 py-16 sm:py-20 lg:grid-cols-3 lg:gap-10">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 pr-3 mr-5">
             <p className="text-sm font-medium tracking-tight">Hello, I’m</p>
             <h1 className="mt-2 text-5xl sm:text-6xl font-extrabold leading-tight font-display">Tanatswa Bhasera</h1>
             <p className="mt-4 text-base sm:text-lg text-foreground/80 max-w-2xl">
-              I’m a Freelance
-              <span
-                className="px-1"
-                style={{
-                  backgroundImage: "linear-gradient(to top, rgb(255,200,200) 40%, transparent 40%)",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "100% 100%",
-                }}
-              >
-                UI/UX Designer
-              </span>
-              and
-              <span
-                className="px-1"
-                style={{
-                  backgroundImage: "linear-gradient(to top, rgb(255,200,200) 40%, transparent 40%)",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "100% 100%",
-                }}
-              >
-                Developer
-              </span>
-              based in Harare, Zimbabwe. I build immersive and beautiful web
-              applications through carefully crafted code and user‑centric design.
+              Dedicated and performance-driven Information Technology professional with proven experience in IT operations, support, and systems management. I provide services in software development, networking, system administration, cybersecurity, and IT support, helping organizations optimize efficiency and security. Known for reliability, strong problem-solving capabilities, and a passion for advancing technology, I specialize in delivering practical and innovative solutions tailored to organizational needs.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Button asChild>
@@ -58,8 +35,6 @@ export default function Index() {
               <a href="tel:+263713024678" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Phone className="h-4 w-4"/>+263 713 024 678</a>
               <span className="text-muted-foreground/40">•</span>
               <a href="mailto:bhaseratanatswa30@gmail.com" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Mail className="h-4 w-4"/>bhaseratanatswa30@gmail.com</a>
-              <span className="text-muted-foreground/40">•</span>
-              <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4"/>990 Glenview 7, Harare, Zimbabwe</span>
             </div>
           </div>
           <aside className="lg:col-span-1">
@@ -81,11 +56,6 @@ export default function Index() {
                 <li className="flex items-start gap-3"><span className="mt-1 h-2 w-2 rounded-full bg-primary"/>License: Class 4 (7 years)</li>
                 <li className="flex items-start gap-3"><span className="mt-1 h-2 w-2 rounded-full bg-primary"/>English & Shona — Fluent</li>
               </ul>
-              <div className="mt-6">
-                <Button asChild variant="outline" className="w-full">
-                  <a href="https://cdn.builder.io/o/assets%2F151040adad4644778a8544b549b97ad5%2Fa5ab4c6b237f433a9afb8e882da4bcf4?alt=media&token=20fc5235-bb6e-4636-b115-ca18f9d1d4f1&apiKey=151040adad4644778a8544b549b97ad5" target="_blank" rel="noreferrer"><Download className="h-4 w-4"/>Download CV</a>
-                </Button>
-              </div>
             </div>
           </aside>
         </div>
