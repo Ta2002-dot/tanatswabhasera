@@ -6,24 +6,47 @@ export default function Index() {
   return (
     <div id="top">
       {/* Hero */}
-      <section className="relative overflow-hidden border-b bg-gradient-to-br from-primary/5 via-accent/5 to-transparent">
-        <div className="absolute inset-0 -z-10 opacity-20 [mask-image:radial-gradient(50%_50%_at_50%_0%,black,transparent)]">
-          <div className="absolute -top-20 left-1/2 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-primary/30 blur-3xl" />
-        </div>
+      <section
+        className="relative overflow-hidden border-b"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 12% 100%, rgba(255,226,176,0.96) 1%, rgba(255,226,176,0) 40%), radial-gradient(circle at 95% -15%, rgba(218,77,241,0.35) 5%, rgba(218,77,241,0) 40%), radial-gradient(100% 100% at 100% 50%, rgba(196,245,233,0.5) 2%, rgba(196,245,233,0) 35%)",
+          backgroundColor: "#fff",
+        }}
+      >
         <div className="container mx-auto grid gap-6 py-16 sm:py-20 lg:grid-cols-3 lg:gap-10">
           <div className="lg:col-span-2">
-            <p className="text-sm uppercase tracking-widest text-primary">Portfolio</p>
-            <h1 className="mt-2 text-4xl sm:text-5xl font-extrabold leading-tight">
-              Tanatswa Bhasera
-            </h1>
-            <p className="mt-3 text-lg sm:text-xl text-muted-foreground max-w-2xl">
-              Dedicated and performance-driven Information Technology professional
-              specializing in software development, networking, systems
-              administration, cybersecurity, and IT support.
+            <p className="text-sm font-medium tracking-tight">Hello, I’m</p>
+            <h1 className="mt-2 text-5xl sm:text-6xl font-extrabold leading-tight font-display">Tanatswa Bhasera</h1>
+            <p className="mt-4 text-base sm:text-lg text-foreground/80 max-w-2xl">
+              I’m a Freelance
+              <span
+                className="px-1"
+                style={{
+                  backgroundImage: "linear-gradient(to top, rgb(255,200,200) 40%, transparent 40%)",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "100% 100%",
+                }}
+              >
+                UI/UX Designer
+              </span>
+              and
+              <span
+                className="px-1"
+                style={{
+                  backgroundImage: "linear-gradient(to top, rgb(255,200,200) 40%, transparent 40%)",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "100% 100%",
+                }}
+              >
+                Developer
+              </span>
+              based in Harare, Zimbabwe. I build immersive and beautiful web
+              applications through carefully crafted code and user‑centric design.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Button asChild>
-                <a href="#contact" aria-label="Contact Tanatswa">Contact Me</a>
+                <a href="mailto:bhaseratanatswa30@gmail.com" aria-label="Say Hello">Say Hello!</a>
               </Button>
               <Button asChild variant="secondary">
                 <a href="#experience" aria-label="View experience">View Experience</a>
@@ -38,6 +61,11 @@ export default function Index() {
               <span className="text-muted-foreground/40">•</span>
               <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4"/>990 Glenview 7, Harare, Zimbabwe</span>
             </div>
+            <div className="mt-10 grid w-full max-w-xl grid-cols-3 gap-3">
+              <Stat value="15 Y." label="Experience" />
+              <Stat value="250+" label="Projects Completed" />
+              <Stat value="58" label="Happy Clients" />
+            </div>
           </div>
           <aside className="lg:col-span-1">
             <div className="mx-auto w-full max-w-sm">
@@ -45,7 +73,7 @@ export default function Index() {
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2613a1521c4d42c5a11a66e7e7380c36?format=webp&width=800"
                   alt="Tanatswa Bhasera portrait"
-                  className="mx-auto block h-auto w-full object-contain drop-shadow-xl"
+                  className="mx-auto block h-auto w-full object-cover drop-shadow-xl"
                   loading="eager"
                 />
               </div>
