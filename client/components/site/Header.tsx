@@ -87,7 +87,7 @@ export default function Header() {
               <MessageCircle className="h-4 w-4" />
             </a>
           </div>
-          <Button asChild size="sm">
+          <Button asChild size="sm" className="bg-[rgba(158,115,14,1)] hover:bg-[rgba(158,115,14,0.9)] text-slate-50">
             <a href="#contact">Contact</a>
           </Button>
         </div>
