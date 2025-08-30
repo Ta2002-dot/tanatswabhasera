@@ -318,3 +318,12 @@ function Benefit({ title, desc }: { title: string; desc: string }) {
     </div>
   );
 }
+
+function Stat({ value, label }: { value: string; label: string }) {
+  return (
+    <div className="rounded-xl bg-violet-50 p-4 text-center dark:bg-violet-950/20">
+      <div className="text-2xl font-bold">{value}</div>
+      <div className="mt-1 text-xs text-muted-foreground">{label}</div>
+    </div>
+  );
+}
