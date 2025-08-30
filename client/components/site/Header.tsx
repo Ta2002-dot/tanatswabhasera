@@ -12,7 +12,7 @@ const NAV = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-40 w-full glass shadow-md">
       <div className="container mx-auto flex h-16 items-center justify-between">
         <a href="#top" className="flex items-baseline gap-2" aria-label="Go to top" />
         <nav className="hidden md:flex items-center gap-6">
