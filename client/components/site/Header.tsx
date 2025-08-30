@@ -14,7 +14,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 w-full bg-slate-950/70 backdrop-blur border-b border-white/10 text-slate-100">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <a href="#top" className="flex items-baseline gap-2" aria-label="Go to top">
-          <span className="font-brand text-2xl text-white">Portfolio</span>
+          <span className="font-brand text-2xl text-white">Tana's Portfolio</span>
         </a>
         <nav className="hidden md:flex items-center gap-6">
           {NAV.map((n) => (
