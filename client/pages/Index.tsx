@@ -45,7 +45,7 @@ export default function Index() {
                   src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2807a407e777435e8d518e17cdef0b89?format=webp&width=800"
                   alt="Tanatswa Bhasera portrait"
                   className="h-full w-full rounded-full object-cover bg-white drop-shadow-xl scale-110"
-                  style={{ objectPosition: "60% center" }}
+                  style={{ objectPosition: "60% 60%" }}
                   loading="eager"
                 />
               </motion.div>
