@@ -268,7 +268,7 @@ function ReferenceCard({ name, role, phone, email }: { name: string; role: strin
 
 function Detail({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex items-center justify-between rounded-lg border bg-muted/30 px-4 py-3">
+    <div className="flex items-center justify-between glass rounded-xl px-4 py-3">
       <span className="text-muted-foreground">{label}</span>
       <span className="font-medium">{value}</span>
     </div>
