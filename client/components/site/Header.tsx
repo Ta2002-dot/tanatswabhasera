@@ -14,8 +14,10 @@ export default function Header() {
     <header className="sticky top-0 z-40 w-full glass-dark border-b border-white/10">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <a href="#top" className="flex items-baseline gap-2" aria-label="Go to top">
-          <span className="text-lg font-bold tracking-tight text-foreground">Tanatswa</span>
-          <span className="hidden sm:inline text-sm text-muted-foreground">IT Professional</span>
+          <span className="sr-only">Tanatswa</span>
+          <span aria-hidden className="hidden sm:inline text-sm text-[#0b1220] select-none">
+            ....................................................
+          </span>
         </a>
         <nav className="hidden md:flex items-center gap-6">
           {NAV.map((n) => (
