@@ -10,7 +10,7 @@ export default function Index() {
         className="relative overflow-hidden border-b border-white/10"
         style={{
           backgroundImage:
-            "radial-gradient(1200px 600px at 0% 100%, rgba(14,20,35,0.85) 0%, rgba(14,20,35,0) 60%), radial-gradient(1000px 500px at 100% 0%, rgba(8,12,24,0.85) 0%, rgba(8,12,24,0) 60%)",
+            "radial-gradient(1200px 600px at 0% 100%, rgba(14,20,35,0.30) 0%, rgba(14,20,35,0) 60%), radial-gradient(1000px 500px at 100% 0%, rgba(8,12,24,0.30) 0%, rgba(8,12,24,0) 60%)",
           backgroundColor: "#0b1220",
         }}
       >
