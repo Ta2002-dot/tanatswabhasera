@@ -17,7 +17,14 @@ export default function Header() {
         <a href="#top" className="flex items-baseline gap-2" aria-label="Go to top" />
         <nav className="hidden md:flex items-center gap-6">
           {NAV.map((n) => (
-            <a key={n.href} href={n.href} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              key={n.href}
+              href={n.href}
+              className={
+                "text-sm font-medium text-muted-foreground hover:text-foreground transition-colors " +
+                (n.href === "#contact" ? "ml-[7px]" : "")
+              }
+            >
               {n.label}
             </a>
           ))}
