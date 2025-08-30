@@ -11,7 +11,7 @@ export default function Section({ id, title, description, children }: SectionPro
     <section id={id} className="scroll-mt-24 py-12 sm:py-16">
       <div className="container mx-auto">
         {title && (
-          <div className="mb-6 sm:mb-8">
+          <div className="mb-6 sm:mb-8 glass rounded-2xl p-4">
             <h2 className="text-2xl sm:text-3xl font-bold">{title}</h2>
             {description && (
               <p className="mt-2 text-muted-foreground max-w-3xl">{description}</p>
