@@ -1,6 +1,7 @@
 import Section from "@/components/site/Section";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Download, ExternalLink, Wrench, Shield, Server } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Index() {
   return (
