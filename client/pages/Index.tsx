@@ -14,6 +14,9 @@ export default function Index() {
           backgroundColor: "#0b1220",
         }}
       >
+        <div className="pointer-events-none absolute -left-20 -bottom-20 h-72 w-72 bubble bubble-red" />
+        <div className="pointer-events-none absolute -right-16 -top-16 h-60 w-60 bubble bubble-red" />
+        <div className="pointer-events-none absolute right-10 top-1/2 -translate-y-1/2 h-10 w-10 bubble bubble-red" />
         <div className="container mx-auto grid gap-6 py-16 sm:py-20 lg:grid-cols-3 lg:gap-10">
           <div className="lg:col-span-2 pr-3 mr-5 glass-dark p-6 rounded-3xl">
             <p className="text-sm font-medium tracking-tight">Hello, I’m</p>
