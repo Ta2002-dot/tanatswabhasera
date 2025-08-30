@@ -13,10 +13,10 @@ export default function Section({ id, title, description, children }: SectionPro
       <div className="pointer-events-none absolute -right-16 bottom-8 h-24 w-24 bubble bubble-red opacity-30 hidden md:block -z-10" />
       <div className="container mx-auto">
         {title && (
-          <div className="mb-6 sm:mb-8 rounded-2xl p-4 bg-white/70 backdrop-blur border border-black/10 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-bold">{title}</h2>
+          <div className="mb-6 sm:mb-8 rounded-2xl p-4 glass-dark shadow-2xl">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">{title}</h2>
             {description && (
-              <p className="mt-2 text-muted-foreground max-w-3xl">{description}</p>
+              <p className="mt-2 text-slate-300 max-w-3xl">{description}</p>
             )}
           </div>
         )}
