@@ -40,6 +40,53 @@ export default function Header() {
           <span className="hidden lg:inline-flex items-center gap-1 text-sm text-muted-foreground">
             <MapPin className="h-4 w-4" /> Harare, Zimbabwe
           </span>
+          <div className="ml-2 flex items-center gap-2">
+            <a
+              href="https://www.facebook.com/share/17JjzuijiD/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <Facebook className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.instagram.com/preacher.zw?igsh=MTJxbWUxbTAycXlnZA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <Instagram className="h-4 w-4" />
+            </a>
+            <a
+              href="https://github.com/Ta2002-dot"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <Github className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tanatswa-bhasera-611a6a334/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <Linkedin className="h-4 w-4" />
+            </a>
+            <a
+              href="https://wa.me/263777015981"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <MessageCircle className="h-4 w-4" />
+            </a>
+          </div>
           <Button asChild size="sm">
             <a href="#contact">Contact</a>
           </Button>
