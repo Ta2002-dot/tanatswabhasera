@@ -60,7 +60,7 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Playfair Display", "ui-serif", "Georgia", "serif"],
+        display: ["Poppins", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
         mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
       borderRadius: {
