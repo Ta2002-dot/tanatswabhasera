@@ -95,13 +95,42 @@ export default function Index() {
 
       {/* Skills */}
       <Section id="skills" title={<>Skills</>} description={<>A blend of software, infrastructure, and soft skills.</>}>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <SkillCard title="Programming Languages" items={["Python", "C", "C#", "PHP", "Laravel", "C++"]} />
-          <SkillCard title="Web Development" items={["HTML", "CSS", "JavaScript", "Front-end frameworks"]} />
-          <SkillCard title="Big Data Analytics" items={["Data analysis", "Visualization techniques"]} />
-          <SkillCard title="AI & Machine Learning" items={["AI concepts", "Machine learning algorithms"]} />
-          <SkillCard title="Database Management" items={["SQL", "Data integrity practices"]} />
-          <SkillCard title="Networking" items={["Data communication", "Network configuration", "Troubleshooting"]} />
+        <div className="space-y-8">
+          <div>
+            <h3 className="mb-3 text-lg font-semibold">Core Skills</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <SkillCard title="Frontend Development" items={["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript"]} />
+              <SkillCard title="Frameworks & Libraries" items={["React.js", "Angular", "Vue.js (optional)", "jQuery"]} />
+              <SkillCard title="Backend Development" items={["Node.js", "Express.js", "PHP", "Python (Django/Flask)", "Java (Spring Boot)"]} />
+              <SkillCard title="Databases" items={["MySQL", "PostgreSQL", "MongoDB", "SQLite"]} />
+              <SkillCard title="Version Control" items={["Git", "GitHub", "GitLab", "Bitbucket"]} />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-3 text-lg font-semibold">Advanced Skills</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <SkillCard title="APIs" items={["RESTful APIs", "GraphQL"]} />
+              <SkillCard title="Auth" items={["JWT", "OAuth"]} />
+              <SkillCard title="Cloud Platforms" items={["AWS", "Azure", "Google Cloud"]} />
+              <SkillCard title="Containerization & DevOps" items={["Docker", "Kubernetes", "CI/CD (GitHub Actions, Jenkins)"]} />
+              <SkillCard title="Testing" items={["Jest", "Mocha", "PHPUnit", "Selenium"]} />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-3 text-lg font-semibold">UI/UX & Tools</h3>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <SkillCard title="Responsive Design" items={["Bootstrap", "TailwindCSS"]} />
+              <SkillCard title="Prototyping" items={["Figma", "Adobe XD"]} />
+              <SkillCard title="Web Accessibility" items={["WCAG"]} />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-3 text-lg font-semibold">Soft Skills</h3>
+            <SkillCard title="Soft Skills" items={["Problem-Solving & Debugging", "Agile & Scrum Methodologies", "Communication & Team Collaboration"]} />
+          </div>
         </div>
       </Section>
 
