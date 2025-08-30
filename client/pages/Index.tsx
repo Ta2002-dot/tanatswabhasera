@@ -42,7 +42,7 @@ export default function Index() {
             <div className="mx-auto w-full max-w-sm">
               <motion.div className="relative mx-auto aspect-square max-w-[320px] overflow-hidden rounded-full border bg-gradient-to-b from-primary/10 to-background p-2 shadow-lg ring-1 ring-primary/20" animate={{ y: [0, -6, 0] }} transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}>
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F778f510915214189bb148559140cf257?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2807a407e777435e8d518e17cdef0b89?format=webp&width=800"
                   alt="Tanatswa Bhasera portrait"
                   className="h-full w-full rounded-full object-contain bg-white drop-shadow-xl"
                   loading="eager"
