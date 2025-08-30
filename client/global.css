@@ -105,3 +105,17 @@
     @apply font-display tracking-tight;
   }
 }
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-xl bg-white/40 dark:bg-slate-900/30 border ring-1 ring-white/50 dark:ring-white/10;
+  }
+  .clay-card {
+    @apply rounded-2xl border backdrop-blur-xl bg-white/60 dark:bg-slate-900/40 ring-1 ring-white/50 dark:ring-white/10;
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.08);
+  }
+  .clay-button {
+    @apply rounded-xl;
+    box-shadow: 6px 6px 14px rgba(0,0,0,0.12), -2px -2px 8px rgba(255,255,255,0.6) inset;
+  }
+}
