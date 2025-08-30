@@ -6,7 +6,12 @@ interface SectionProps extends PropsWithChildren {
   description?: ReactNode;
 }
 
-export default function Section({ id, title, description, children }: SectionProps) {
+export default function Section({
+  id,
+  title,
+  description,
+  children,
+}: SectionProps) {
   return (
     <section id={id} className="relative scroll-mt-24 py-12 sm:py-16">
       <div className="pointer-events-none absolute -left-24 top-10 h-40 w-40 bubble bubble-red opacity-40 hidden md:block -z-10" />
@@ -14,7 +19,9 @@ export default function Section({ id, title, description, children }: SectionPro
       <div className="container mx-auto">
         {title && (
           <div className="mb-6 sm:mb-8 rounded-2xl p-4 glass-dark shadow-2xl">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">{title}</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+              {title}
+            </h2>
             {description && (
               <p className="mt-2 text-slate-300 max-w-3xl">{description}</p>
             )}

@@ -60,7 +60,13 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Poppins", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: [
+          "Poppins",
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
         brand: ["Allura", "cursive"],
         mono: ["ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },

@@ -101,7 +101,9 @@
     @apply bg-background text-foreground antialiased;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     @apply font-display tracking-tight;
     font-weight: 800;
     letter-spacing: -0.02em;
@@ -117,24 +119,34 @@
   }
   .bubble {
     @apply rounded-full shadow-2xl;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
   }
   .bubble-red {
     background: radial-gradient(circle at 35% 35%, #ff6b6b, #ef4444 60%);
   }
   .clay-card {
     @apply rounded-2xl backdrop-blur-xl bg-slate-900/55 text-slate-100 border border-white/10 ring-1 ring-white/10;
-    box-shadow: 8px 8px 20px rgba(0,0,0,0.25);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25);
   }
   .clay-button {
     @apply rounded-xl;
-    box-shadow: 6px 6px 14px rgba(0,0,0,0.35), -2px -2px 8px rgba(255,255,255,0.08) inset;
+    box-shadow:
+      6px 6px 14px rgba(0, 0, 0, 0.35),
+      -2px -2px 8px rgba(255, 255, 255, 0.08) inset;
   }
   .glossy-bg {
     background-color: #0b1220;
     background-image:
-      radial-gradient(900px 500px at -10% 110%, rgba(239,68,68,0.25) 0%, rgba(239,68,68,0) 55%),
-      radial-gradient(900px 500px at 110% -10%, rgba(239,68,68,0.2) 0%, rgba(239,68,68,0) 55%),
+      radial-gradient(
+        900px 500px at -10% 110%,
+        rgba(239, 68, 68, 0.25) 0%,
+        rgba(239, 68, 68, 0) 55%
+      ),
+      radial-gradient(
+        900px 500px at 110% -10%,
+        rgba(239, 68, 68, 0.2) 0%,
+        rgba(239, 68, 68, 0) 55%
+      ),
       linear-gradient(180deg, #0b1220 0%, #0a1222 50%, #0b1220 100%);
   }
   .glossy-overlay {
@@ -142,8 +154,16 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(800px 260px at 20% 0%, rgba(255,255,255,0.08), rgba(255,255,255,0) 60%),
-      radial-gradient(800px 260px at 80% 100%, rgba(255,255,255,0.06), rgba(255,255,255,0) 60%);
+      radial-gradient(
+        800px 260px at 20% 0%,
+        rgba(255, 255, 255, 0.08),
+        rgba(255, 255, 255, 0) 60%
+      ),
+      radial-gradient(
+        800px 260px at 80% 100%,
+        rgba(255, 255, 255, 0.06),
+        rgba(255, 255, 255, 0) 60%
+      );
     mix-blend-mode: screen;
   }
 }
