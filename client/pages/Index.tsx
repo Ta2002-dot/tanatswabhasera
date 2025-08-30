@@ -49,7 +49,7 @@ export default function Index() {
                 <a href="mailto:bhaseratanatswa30@gmail.com" aria-label="Say Hello">Say Hello!</a>
               </Button>
               <Button asChild variant="secondary">
-                <a href="#experience" aria-label="View experience">View Experience</a>
+                <a href="https://cdn.builder.io/o/assets%2F151040adad4644778a8544b549b97ad5%2F23af3c8a5e9048b6a67aa26a49d2dfee?alt=media&token=65dc39d8-c13e-49fa-bfe8-9fb453ca1e98&apiKey=151040adad4644778a8544b549b97ad5" target="_blank" rel="noreferrer" aria-label="Download CV"><Download className="mr-2 h-4 w-4"/>Download CV</a>
               </Button>
             </div>
             <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
@@ -61,19 +61,14 @@ export default function Index() {
               <span className="text-muted-foreground/40">•</span>
               <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4"/>990 Glenview 7, Harare, Zimbabwe</span>
             </div>
-            <div className="mt-10 grid w-full max-w-xl grid-cols-3 gap-3">
-              <Stat value="15 Y." label="Experience" />
-              <Stat value="250+" label="Projects Completed" />
-              <Stat value="58" label="Happy Clients" />
-            </div>
           </div>
           <aside className="lg:col-span-1">
             <div className="mx-auto w-full max-w-sm">
-              <div className="relative overflow-hidden rounded-3xl border bg-gradient-to-b from-primary/10 to-background p-2 shadow-sm">
+              <div className="relative mx-auto aspect-square max-w-[320px] overflow-hidden rounded-full border bg-gradient-to-b from-primary/10 to-background p-2 shadow-lg ring-1 ring-primary/20">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2613a1521c4d42c5a11a66e7e7380c36?format=webp&width=800"
                   alt="Tanatswa Bhasera portrait"
-                  className="mx-auto block h-auto w-full object-cover drop-shadow-xl"
+                  className="h-full w-full rounded-full object-cover drop-shadow-xl"
                   loading="eager"
                 />
               </div>
