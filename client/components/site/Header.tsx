@@ -11,7 +11,7 @@ const NAV = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full bg-slate-900/70 text-slate-100 backdrop-blur border-b border-white/10">
+    <header className="sticky top-0 z-40 w-full glass-dark border-b border-white/10">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <a href="#top" className="flex items-baseline gap-2" aria-label="Go to top">
           <span className="text-lg font-bold tracking-tight text-foreground">Tanatswa</span>
