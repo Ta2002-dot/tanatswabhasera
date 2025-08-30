@@ -7,15 +7,10 @@ export default function Index() {
     <div id="top">
       {/* Hero */}
       <section
-        className="relative overflow-hidden border-b border-white/10"
-        style={{
-          backgroundImage:
-            "radial-gradient(1200px 600px at 0% 100%, rgba(14,20,35,0.30) 0%, rgba(14,20,35,0) 60%), radial-gradient(1000px 500px at 100% 0%, rgba(8,12,24,0.30) 0%, rgba(8,12,24,0) 60%)",
-          backgroundColor: "#0b1220",
-        }}
+        className="relative overflow-hidden border-b border-black/10 bg-gradient-to-b from-white to-slate-100"
       >
         <div className="container mx-auto grid gap-6 py-16 sm:py-20 lg:grid-cols-3 lg:gap-10">
-          <div className="lg:col-span-2 pr-3 mr-5 glass-dark p-6 rounded-2xl">
+          <div className="lg:col-span-2 pr-3 mr-5 bg-white/80 border border-black/10 shadow p-6 rounded-2xl">
             <p className="text-sm font-medium tracking-tight">Hello, I’m</p>
             <h1 className="mt-2 text-5xl sm:text-6xl font-extrabold leading-tight font-display">Tanatswa Bhasera</h1>
             <p className="mt-4 text-base sm:text-lg text-foreground/80 max-w-2xl">
@@ -39,7 +34,7 @@ export default function Index() {
           </div>
           <aside className="lg:col-span-1">
             <div className="mx-auto w-full max-w-sm">
-              <div className="relative mx-auto aspect-square max-w-[320px] overflow-hidden rounded-full border bg-gradient-to-b from-primary/10 to-background p-2 shadow-lg ring-1 ring-primary/20">
+              <div className="relative mx-auto aspect-square max-w-[320px] overflow-hidden rounded-full border border-black/10 bg-white p-2 shadow-lg">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2807a407e777435e8d518e17cdef0b89?format=webp&width=800"
                   alt="Tanatswa Bhasera portrait"
@@ -49,7 +44,7 @@ export default function Index() {
                 />
               </div>
             </div>
-            <div className="mt-6 clay-card p-6">
+            <div className="mt-6 bg-white/80 border border-black/10 rounded-2xl p-6 shadow">
               <h3 className="text-lg font-semibold">Quick Facts</h3>
               <ul className="mt-4 grid gap-3 text-sm">
                 <li className="flex items-start gap-3"><span className="mt-1 h-2 w-2 rounded-full bg-primary"/>Zimbabwean • Single</li>
