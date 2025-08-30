@@ -1,7 +1,6 @@
 import Section from "@/components/site/Section";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Download, ExternalLink, Wrench, Shield, Server } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function Index() {
   return (
@@ -16,7 +15,7 @@ export default function Index() {
         }}
       >
         <div className="container mx-auto grid gap-6 py-16 sm:py-20 lg:grid-cols-3 lg:gap-10">
-          <motion.div className="lg:col-span-2 pr-3 mr-5 glass-dark p-6 rounded-2xl" animate={{ y: [0, -4, 0] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}>
+          <div className="lg:col-span-2 pr-3 mr-5 glass-dark p-6 rounded-2xl">
             <p className="text-sm font-medium tracking-tight">Hello, I’m</p>
             <h1 className="mt-2 text-5xl sm:text-6xl font-extrabold leading-tight font-display">Tanatswa Bhasera</h1>
             <p className="mt-4 text-base sm:text-lg text-foreground/80 max-w-2xl">
@@ -37,10 +36,10 @@ export default function Index() {
               <span className="text-muted-foreground/40">•</span>
               <a href="mailto:bhaseratanatswa30@gmail.com" className="inline-flex items-center gap-2 hover:text-foreground transition-colors"><Mail className="h-4 w-4"/>bhaseratanatswa30@gmail.com</a>
             </div>
-          </motion.div>
+          </div>
           <aside className="lg:col-span-1">
             <div className="mx-auto w-full max-w-sm">
-              <motion.div className="relative mx-auto aspect-square max-w-[320px] overflow-hidden rounded-full border bg-gradient-to-b from-primary/10 to-background p-2 shadow-lg ring-1 ring-primary/20" animate={{ y: [0, -6, 0] }} transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}>
+              <div className="relative mx-auto aspect-square max-w-[320px] overflow-hidden rounded-full border bg-gradient-to-b from-primary/10 to-background p-2 shadow-lg ring-1 ring-primary/20">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2807a407e777435e8d518e17cdef0b89?format=webp&width=800"
                   alt="Tanatswa Bhasera portrait"
@@ -48,9 +47,9 @@ export default function Index() {
                   style={{ objectPosition: "60% 60%" }}
                   loading="eager"
                 />
-              </motion.div>
+              </div>
             </div>
-            <motion.div className="mt-6 clay-card p-6" animate={{ y: [0, 4, 0] }} transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}>
+            <div className="mt-6 clay-card p-6">
               <h3 className="text-lg font-semibold">Quick Facts</h3>
               <ul className="mt-4 grid gap-3 text-sm">
                 <li className="flex items-start gap-3"><span className="mt-1 h-2 w-2 rounded-full bg-primary"/>Zimbabwean • Single</li>
@@ -58,7 +57,7 @@ export default function Index() {
                 <li className="flex items-start gap-3"><span className="mt-1 h-2 w-2 rounded-full bg-primary"/>License: Class 4 (7 years)</li>
                 <li className="flex items-start gap-3"><span className="mt-1 h-2 w-2 rounded-full bg-primary"/>English & Shona — Fluent</li>
               </ul>
-            </motion.div>
+            </div>
           </aside>
         </div>
       </section>
