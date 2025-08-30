@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Github, Linkedin, MessageCircle } from "lucide-react";
 
 const NAV = [
   { href: "#about", label: "About" },
