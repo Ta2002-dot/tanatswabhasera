@@ -75,7 +75,7 @@ export default function Index() {
             </div>
           </div>
           <div className="lg:col-span-1">
-            <div className="rounded-xl border bg-card p-5">
+            <div className="clay-card p-5">
               <h4 className="font-semibold">Core Focus</h4>
               <ul className="mt-3 space-y-2 text-sm">
                 <li className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary"/>Software Development</li>
@@ -92,7 +92,7 @@ export default function Index() {
       {/* Experience */}
       <Section id="experience" title={<>Professional Experience</>}>
         <div className="grid gap-6">
-          <div className="rounded-xl border bg-card p-6 shadow-sm">
+          <div className="clay-card p-6">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <h3 className="text-xl font-semibold">IT Intern — Victoria Foods (Pvt) Limited</h3>
@@ -123,19 +123,19 @@ export default function Index() {
       {/* Education & Certifications */}
       <Section id="education" title={<>Education</>}>
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl border bg-card p-6">
+          <div className="clay-card p-6">
             <h4 className="font-semibold">Bachelor of Science (Hons) in Information Technology</h4>
             <p className="text-sm text-muted-foreground">Chinhoyi University of Technology — Current</p>
           </div>
-          <div className="rounded-xl border bg-card p-6">
+          <div className="clay-card p-6">
             <h4 className="font-semibold">First Choice Private School</h4>
             <p className="text-sm text-muted-foreground">Graduated 2021 — Achieved 13 points (Computer Science, Business Studies, Statistics)</p>
           </div>
-          <div className="rounded-xl border bg-card p-6">
+          <div className="clay-card p-6">
             <h4 className="font-semibold">Highfield High 1 School</h4>
             <p className="text-sm text-muted-foreground">Graduated 2019 — 9 O Level passes (incl. Mathematics, English, Science)</p>
           </div>
-          <div className="rounded-xl border bg-card p-6">
+          <div className="clay-card p-6">
             <h4 className="font-semibold">Kuwangira Primary School</h4>
             <p className="text-sm text-muted-foreground">Graduated — Achieved 10 units</p>
           </div>
@@ -144,11 +144,11 @@ export default function Index() {
 
       <Section id="certifications" title={<>Certifications</>}>
         <div className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-xl border bg-card p-6">
+          <div className="clay-card p-6">
             <h4 className="font-semibold">Diploma in AI & Big Data Analytics</h4>
             <p className="text-sm text-muted-foreground">Zimbabwe Centre for High Performance Computing (ZCHPC)-UZ | Jun 2024 – Dec 2024</p>
           </div>
-          <div className="rounded-xl border bg-card p-6">
+          <div className="clay-card p-6">
             <h4 className="font-semibold">Leadership & Communication Best Award</h4>
             <p className="text-sm text-muted-foreground">First Choice School of Business and Applied Arts | 2020</p>
           </div>
@@ -171,7 +171,7 @@ export default function Index() {
 
       {/* Languages */}
       <Section id="languages" title={<>Languages</>}>
-        <div className="rounded-xl border bg-card p-6">
+        <div className="clay-card p-6">
           <ul className="grid gap-3 sm:grid-cols-2">
             <li><span className="font-medium">English</span>: Fluent</li>
             <li><span className="font-medium">Shona</span>: Fluent</li>
@@ -190,7 +190,7 @@ export default function Index() {
 
       {/* Personal Details */}
       <Section id="personal-details" title={<>Personal Details</>}>
-        <div className="rounded-xl border bg-card p-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-sm">
+        <div className="clay-card p-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-sm">
           <Detail label="Nationality" value="Zimbabwean" />
           <Detail label="Date of Birth" value="16 July 2002" />
           <Detail label="Marital Status" value="Single" />
@@ -202,7 +202,7 @@ export default function Index() {
       {/* Contact */}
       <Section id="contact" title={<>Get In Touch</>} description={<>I’m available for full-time roles, internships, and freelance opportunities.</>}>
         <div className="grid gap-6 lg:grid-cols-3">
-          <div className="rounded-xl border bg-card p-6">
+          <div className="clay-card p-6">
             <h4 className="font-semibold">Contact</h4>
             <ul className="mt-4 grid gap-3 text-sm">
               <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary"/>+263 777 015 981</li>
@@ -237,7 +237,7 @@ export default function Index() {
 
 function SkillCard({ title, items }: { title: string; items: string[] }) {
   return (
-    <div className="rounded-xl border bg-card p-6">
+    <div className="clay-card p-6">
       <h4 className="font-semibold">{title}</h4>
       <div className="mt-3 flex flex-wrap gap-2">
         {items.map((s) => (
@@ -255,7 +255,7 @@ function SkillCard({ title, items }: { title: string; items: string[] }) {
 
 function ReferenceCard({ name, role, phone, email }: { name: string; role: string; phone: string; email: string; }) {
   return (
-    <div className="rounded-xl border bg-card p-6">
+    <div className="clay-card p-6">
       <h4 className="text-lg font-semibold">{name}</h4>
       <p className="text-sm text-muted-foreground">{role}</p>
       <ul className="mt-4 grid gap-2 text-sm">
