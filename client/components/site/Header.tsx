@@ -11,7 +11,7 @@ const NAV = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full glass-dark border-b border-white/10">
+    <header className="sticky top-0 z-40 w-full bg-white/70 backdrop-blur border-b border-black/10 text-slate-900">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <a href="#top" className="flex items-baseline gap-2" aria-label="Go to top">
           <span className="sr-only">Tanatswa</span>
@@ -24,7 +24,7 @@ export default function Header() {
             <a
               key={n.href}
               href={n.href}
-              className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+              className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
             >
               {n.label}
             </a>
