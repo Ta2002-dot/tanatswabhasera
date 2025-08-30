@@ -103,6 +103,8 @@
 
   h1, h2, h3 {
     @apply font-display tracking-tight;
+    font-weight: 800;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -112,6 +114,13 @@
   }
   .glass-dark {
     @apply backdrop-blur-2xl backdrop-saturate-150 bg-slate-950/60 text-slate-100 border border-white/10 ring-1 ring-white/10 shadow-2xl shadow-black/40;
+  }
+  .bubble {
+    @apply rounded-full shadow-2xl;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+  }
+  .bubble-red {
+    background: radial-gradient(circle at 35% 35%, #ff6b6b, #ef4444 60%);
   }
   .clay-card {
     @apply rounded-2xl backdrop-blur-xl bg-slate-900/55 text-slate-100 border border-white/10 ring-1 ring-white/10;
