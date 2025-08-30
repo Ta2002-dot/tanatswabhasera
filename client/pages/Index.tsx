@@ -277,7 +277,7 @@ function Detail({ label, value }: { label: string; value: string }) {
 
 function Benefit({ title, desc }: { title: string; desc: string }) {
   return (
-    <div className="rounded-lg border bg-muted/20 p-4">
+    <div className="glass rounded-xl p-4">
       <h5 className="font-medium">{title}</h5>
       <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
     </div>
