@@ -126,8 +126,11 @@
     background: radial-gradient(circle at 35% 35%, #ff6b6b, #ef4444 60%);
   }
   .clay-card {
-    @apply rounded-2xl backdrop-blur-xl dark:bg-slate-900/55 bg-[hsl(210_40%_96%)] dark:text-slate-100 text-foreground border dark:border-white/10 border-slate-200 ring-1 dark:ring-white/10 ring-slate-200 transition-colors duration-200 hover:bg-[hsl(210_20%_96%)]/80;
+    @apply rounded-2xl backdrop-blur-xl dark:bg-slate-900/55 bg-[hsl(210_40%_96%)] dark:text-slate-100 text-foreground border dark:border-white/10 border-slate-200 ring-1 dark:ring-white/10 ring-slate-200 transition-colors duration-200;
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  @media (hover: hover) {
+    html:not(.dark) .clay-card:hover { background-color: hsl(210 20% 96% / 0.8); }
   }
   .clay-button {
     @apply rounded-xl;
