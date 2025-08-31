@@ -65,13 +65,13 @@
     --primary: 0 84% 55%; /* red */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 221 83% 53%; /* blue */
+    --secondary: 0 84% 55%; /* red */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 217 32% 17%;
     --muted-foreground: 215 20% 75%;
 
-    --accent: 221 83% 53%;
+    --accent: 0 84% 55%; /* red */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 41%;
