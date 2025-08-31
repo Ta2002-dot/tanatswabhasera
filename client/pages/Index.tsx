@@ -330,6 +330,19 @@ export default function Index() {
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F1dc65774ac6a49558a0fdb4b0b6dc643?format=webp&width=800",
             ]}
           />
+          <ProjectCard
+            title="Tana’s Portfolio – Personal Developer Website"
+            description="Personal portfolio showcasing background, skills, interactive project case studies, CV download, and contact. Fully responsive with modern UI/UX."
+            tags={["React", "Tailwind", "Framer Motion", "Netlify", "GitHub", "Figma", "Canva"]}
+            images={[
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Ff38e12aa723f461db430c7c07ebb82f3?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F7f7a514136cd4d12a5415cb2f988d7bd?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2c215891e6da45b6a4a1b5a69a0ea0d0?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F612292acb4a5489ab923439609aff81e?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Faa8b851ece544b8e925df66cc0d7fa6d?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fc7651a36f4714f71b9f0e115e7b21c18?format=webp&width=800",
+            ]}
+          />
         </div>
       </Section>
 
