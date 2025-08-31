@@ -319,7 +319,7 @@ export default function Index() {
           />
           <ProjectCard
             title="CUT | VHOTAi – Online Voting Platform"
-            description="Secure e‑voting system for CUT SRC elections with voter authentication, manifesto display, and real‑time results."
+            description="Secure e‑voting system for CUT SRC elections with voter authentication, manifesto display, and real���time results."
             tags={["React", "Bootstrap", "Node.js", "Express", "MySQL", "JWT", "AES", "SSL"]}
             images={[
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fb263b6c5abd84569931e8700399f3490?format=webp&width=800",
@@ -528,7 +528,7 @@ function ProjectCard({
                 View
               </Button>
             </AlertDialogTrigger>
-            <AlertDialogContent className="relative max-w-[900px] w-[90vw] sm:w-[80vw] max-h-[85vh] overflow-auto">
+            <AlertDialogContent className="max-w-[900px] w-[90vw] sm:w-[80vw] max-h-[85vh] overflow-auto">
               <AlertDialogHeader>
                 <AlertDialogTitle>{title}</AlertDialogTitle>
                 <AlertDialogDescription className="text-sm">{description}</AlertDialogDescription>
