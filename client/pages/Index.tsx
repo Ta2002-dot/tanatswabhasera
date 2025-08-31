@@ -13,6 +13,7 @@ import {
   Server,
   ChevronLeft,
   ChevronRight,
+  X,
 } from "lucide-react";
 
 export default function Index() {
@@ -502,6 +503,21 @@ function ProjectCard({
           </span>
         ))}
       </div>
+      {images && images.length > 0 && (
+        <div className="mt-3 -mx-1 overflow-x-auto">
+          <div className="flex gap-3 px-1">
+            {images.slice(0, 3).map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt={`${title} preview ${i + 1}`}
+                className="h-20 w-auto rounded-md border border-white/10 shadow"
+                loading={i === 0 ? "eager" : "lazy"}
+              />
+            ))}
+          </div>
+        </div>
+      )}
       <div className="mt-3">
         {images && images.length > 0 ? (
           <AlertDialog>
@@ -511,13 +527,16 @@ function ProjectCard({
                 View
               </Button>
             </AlertDialogTrigger>
-            <AlertDialogContent className="max-w-4xl">
+            <AlertDialogContent className="relative max-w-[900px] w-[90vw] sm:w-[80vw] max-h-[85vh] overflow-auto">
               <AlertDialogHeader>
                 <AlertDialogTitle>{title}</AlertDialogTitle>
-                <AlertDialogDescription>{description}</AlertDialogDescription>
+                <AlertDialogDescription className="text-sm">{description}</AlertDialogDescription>
               </AlertDialogHeader>
+              <AlertDialogCancel className="absolute right-2 top-2 rounded-full bg-black/50 text-white p-2 hover:bg-black/70">
+                <X className="h-4 w-4" />
+              </AlertDialogCancel>
               <div className="relative mt-2">
-                <img src={images![idx]} alt={`${title} screenshot ${idx + 1}`} className="w-full h-auto rounded-lg border border-white/10 shadow" />
+                <img src={images![idx]} alt={`${title} screenshot ${idx + 1}`} className="max-h-[70vh] w-full object-contain rounded-lg border border-white/10 shadow bg-black/20" />
                 {images && images.length > 1 && (
                   <div className="absolute inset-0 flex items-center justify-between px-2">
                     <button aria-label="Previous" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{e.stopPropagation(); setIdx((idx - 1 + images!.length) % images!.length);}}>
@@ -531,7 +550,7 @@ function ProjectCard({
                 <div className="mt-2 text-center text-xs text-slate-300">{idx + 1} / {images?.length}</div>
               </div>
               <div className="mt-4 flex justify-end">
-                <AlertDialogCancel>Close</AlertDialogCancel>
+                <AlertDialogCancel className="px-4 py-2 rounded-md border">Close</AlertDialogCancel>
               </div>
             </AlertDialogContent>
           </AlertDialog>
