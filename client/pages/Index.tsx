@@ -1,6 +1,6 @@
 import Section from "@/components/site/Section";
 import { Button } from "@/components/ui/button";
-import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogTrigger, AlertDialogCancel } from "@/components/ui/alert-dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger, DialogClose } from "@/components/ui/dialog";
 import { useState } from "react";
 import {
   Mail,
@@ -521,21 +521,18 @@ function ProjectCard({
       )}
       <div className="mt-3">
         {images && images.length > 0 ? (
-          <AlertDialog open={open} onOpenChange={(o)=>{ setOpen(o); if (o) setIdx(0); }}>
-            <AlertDialogTrigger asChild>
+          <Dialog open={open} onOpenChange={(o)=>{ setOpen(o); if (o) setIdx(0); }}>
+            <DialogTrigger asChild>
               <Button variant="outline" className="clay-button">
                 <ExternalLink className="h-4 w-4" />
                 View
               </Button>
-            </AlertDialogTrigger>
-            <AlertDialogContent className="max-w-[900px] w-[90vw] sm:w-[80vw] max-h-[85vh] overflow-auto">
-              <AlertDialogHeader>
-                <AlertDialogTitle>{title}</AlertDialogTitle>
-                <AlertDialogDescription className="text-sm">{description}</AlertDialogDescription>
-              </AlertDialogHeader>
-              <AlertDialogCancel className="absolute right-2 top-2 rounded-full bg-black/50 text-white p-2 hover:bg-black/70">
-                <X className="h-4 w-4" />
-              </AlertDialogCancel>
+            </DialogTrigger>
+            <DialogContent className="max-w-[900px] w-[90vw] sm:w-[80vw] max-h-[85vh] overflow-auto">
+              <DialogHeader>
+                <DialogTitle>{title}</DialogTitle>
+                <DialogDescription className="text-sm">{description}</DialogDescription>
+              </DialogHeader>
               <div className="relative mt-2">
                 <img src={(images && images[idx]) ? images[idx] : images?.[0]} alt={`${title} screenshot ${idx + 1}`} loading="eager" decoding="async" className="mx-auto block h-auto max-h-[70vh] w-auto max-w-full object-contain rounded-lg border border-white/10 shadow bg-black/20" />
                 {images && images.length > 1 && (
@@ -551,10 +548,10 @@ function ProjectCard({
                 <div className="mt-2 text-center text-xs text-slate-300">{idx + 1} / {images?.length}</div>
               </div>
               <div className="mt-4 flex justify-end">
-                <AlertDialogCancel className="px-4 py-2 rounded-md border">Close</AlertDialogCancel>
+                <DialogClose asChild><Button variant="outline">Close</Button></DialogClose>
               </div>
-            </AlertDialogContent>
-          </AlertDialog>
+            </DialogContent>
+          </Dialog>
         ) : (
           <Button asChild variant="outline" className="clay-button">
             <a href="#contact">
