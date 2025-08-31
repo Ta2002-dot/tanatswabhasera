@@ -7,7 +7,7 @@ export default function Layout() {
     <div className="dark min-h-screen flex flex-col relative overflow-hidden glossy-bg">
       <div className="glossy-overlay" />
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         <Outlet />
       </main>
       <Footer />
