@@ -514,12 +514,37 @@ function ProjectCard({
         </div>
       )}
       <div className="mt-3">
-        <Button asChild variant="outline" className="clay-button">
-          <a href="#contact">
-            <ExternalLink className="h-4 w-4" />
-            View
-          </a>
-        </Button>
+        {images && images.length > 0 ? (
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="outline" className="clay-button">
+                <ExternalLink className="h-4 w-4" />
+                View
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent className="max-w-4xl">
+              <AlertDialogHeader>
+                <AlertDialogTitle>{title}</AlertDialogTitle>
+                <AlertDialogDescription>{description}</AlertDialogDescription>
+              </AlertDialogHeader>
+              <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                {images.map((src, i) => (
+                  <img key={i} src={src} alt={`${title} screenshot ${i + 1}`} className="w-full h-auto rounded-lg border border-white/10 shadow" loading={i === 0 ? "eager" : "lazy"} />
+                ))}
+              </div>
+              <div className="mt-4 flex justify-end">
+                <AlertDialogCancel>Close</AlertDialogCancel>
+              </div>
+            </AlertDialogContent>
+          </AlertDialog>
+        ) : (
+          <Button asChild variant="outline" className="clay-button">
+            <a href="#contact">
+              <ExternalLink className="h-4 w-4" />
+              View
+            </a>
+          </Button>
+        )}
       </div>
     </div>
   );
