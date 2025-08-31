@@ -130,7 +130,9 @@
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.12);
   }
   @media (hover: hover) {
-    html:not(.dark) .clay-card:hover { background-color: hsl(210 20% 96% / 0.8); }
+    html:not(.dark) .clay-card:hover {
+      background-color: hsl(210 20% 96% / 0.8);
+    }
   }
   .clay-button {
     @apply rounded-xl;

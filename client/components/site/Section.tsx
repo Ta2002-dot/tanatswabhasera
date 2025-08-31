@@ -28,7 +28,9 @@ export default function Section({
               {title}
             </h2>
             {description && (
-              <p className="mt-2 text-muted-foreground max-w-3xl">{description}</p>
+              <p className="mt-2 text-muted-foreground max-w-3xl">
+                {description}
+              </p>
             )}
           </div>
         )}
