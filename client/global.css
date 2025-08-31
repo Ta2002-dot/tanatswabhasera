@@ -12,33 +12,34 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    /* Light theme per guidelines */
+    --background: 210 20% 98%; /* #F9FAFB */
+    --foreground: 215 28% 27%; /* ~#334155 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 210 40% 96%; /* #F1F5F9 */
+    --card-foreground: 215 28% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 215 28% 27%;
 
-    --primary: 199 86% 48%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 84% 55%; /* red #EF4444 */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 37 92% 50%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 221 83% 53%; /* blue #2563EB for tags/links */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 35%;
 
-    --accent: 260 83% 62%;
+    --accent: 0 84% 55%; /* use brand red for accents */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
+    --border: 214 32% 91%; /* #E2E8F0 */
     --input: 214 32% 91%;
-    --ring: 221 83% 53%;
+    --ring: 221 83% 53%; /* focus ring blue */
 
     --radius: 0.75rem;
 
@@ -46,7 +47,7 @@
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 221 83% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 260 83% 62%;
+    --sidebar-accent: 0 84% 55%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
@@ -115,7 +116,7 @@
     @apply backdrop-blur-xl backdrop-saturate-150 bg-slate-900/40 text-slate-100 border border-white/10 ring-1 ring-white/10 shadow-2xl shadow-black/30;
   }
   .glass-dark {
-    @apply backdrop-blur-2xl backdrop-saturate-150 bg-slate-950/60 dark:text-slate-100 text-foreground border border-white/10 ring-1 ring-white/10 shadow-2xl shadow-black/40;
+    @apply backdrop-blur-2xl backdrop-saturate-150 dark:bg-slate-950/60 bg-white/70 dark:text-slate-100 text-foreground border dark:border-white/10 border-slate-200 ring-1 dark:ring-white/10 ring-slate-200 shadow-2xl shadow-black/10 dark:shadow-black/40;
   }
   .bubble {
     @apply rounded-full shadow-2xl;
@@ -125,8 +126,8 @@
     background: radial-gradient(circle at 35% 35%, #ff6b6b, #ef4444 60%);
   }
   .clay-card {
-    @apply rounded-2xl backdrop-blur-xl bg-slate-900/55 dark:text-slate-100 text-foreground border border-white/10 ring-1 ring-white/10;
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25);
+    @apply rounded-2xl backdrop-blur-xl dark:bg-slate-900/55 bg-[hsl(210_40%_96%)] dark:text-slate-100 text-foreground border dark:border-white/10 border-slate-200 ring-1 dark:ring-white/10 ring-slate-200 transition-colors duration-200 hover:bg-[hsl(210_20%_96%)]/80;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.12);
   }
   .clay-button {
     @apply rounded-xl;
