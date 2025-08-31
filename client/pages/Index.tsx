@@ -1,6 +1,14 @@
 import Section from "@/components/site/Section";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger, DialogClose } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+  DialogClose,
+} from "@/components/ui/dialog";
 import { useState } from "react";
 import {
   Mail,
@@ -197,7 +205,9 @@ export default function Index() {
       >
         <div className="space-y-8">
           <div>
-            <h3 className="mb-3 text-lg font-semibold heading-gradient">Core Skills</h3>
+            <h3 className="mb-3 text-lg font-semibold heading-gradient">
+              Core Skills
+            </h3>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <SkillCard
                 title="Frontend Development"
@@ -229,7 +239,9 @@ export default function Index() {
           </div>
 
           <div>
-            <h3 className="mb-3 text-lg font-semibold heading-gradient">Advanced Skills</h3>
+            <h3 className="mb-3 text-lg font-semibold heading-gradient">
+              Advanced Skills
+            </h3>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <SkillCard title="APIs" items={["RESTful APIs", "GraphQL"]} />
               <SkillCard title="Auth" items={["JWT", "OAuth"]} />
@@ -253,7 +265,9 @@ export default function Index() {
           </div>
 
           <div>
-            <h3 className="mb-3 text-lg font-semibold heading-gradient">UI/UX & Tools</h3>
+            <h3 className="mb-3 text-lg font-semibold heading-gradient">
+              UI/UX & Tools
+            </h3>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <SkillCard
                 title="Responsive Design"
@@ -265,7 +279,9 @@ export default function Index() {
           </div>
 
           <div>
-            <h3 className="mb-3 text-lg font-semibold heading-gradient">Soft Skills</h3>
+            <h3 className="mb-3 text-lg font-semibold heading-gradient">
+              Soft Skills
+            </h3>
             <SkillCard
               title="Soft Skills"
               items={[
@@ -293,7 +309,16 @@ export default function Index() {
           <ProjectCard
             title="BikkeIT – Urban Bike Transportation Service"
             description="Built the digital presence for a Zimbabwean bike transport service, highlighting quality service, expert riders, and a safe, affordable city‑riding experience."
-            tags={["React", "Tailwind", "Node.js", "Express", "MongoDB", "Netlify", "Heroku", "Figma"]}
+            tags={[
+              "React",
+              "Tailwind",
+              "Node.js",
+              "Express",
+              "MongoDB",
+              "Netlify",
+              "Heroku",
+              "Figma",
+            ]}
             images={[
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F76032994b15540b685935e81bd28b22c?format=webp&width=800",
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fa5843411def548dfaf54f5b99ac46527?format=webp&width=800",
@@ -307,7 +332,15 @@ export default function Index() {
           <ProjectCard
             title="PGLife – Off‑Campus Student Accommodation Portal (CUT)"
             description="Portal helping CUT students find safe, affordable housing with listings, filters, user profiles, and reviews."
-            tags={["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP", "MySQL", "cPanel"]}
+            tags={[
+              "HTML5",
+              "CSS3",
+              "JavaScript",
+              "Bootstrap",
+              "PHP",
+              "MySQL",
+              "cPanel",
+            ]}
             images={[
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fd5e8de9d3d164674a469291c0b968832?format=webp&width=800",
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fb80d25a016644b06be7d7148d2584257?format=webp&width=800",
@@ -320,7 +353,16 @@ export default function Index() {
           <ProjectCard
             title="CUT | VHOTAi – Online Voting Platform"
             description="Secure e‑voting system for CUT SRC elections with voter authentication, manifesto display, and real-time results."
-            tags={["React", "Bootstrap", "Node.js", "Express", "MySQL", "JWT", "AES", "SSL"]}
+            tags={[
+              "React",
+              "Bootstrap",
+              "Node.js",
+              "Express",
+              "MySQL",
+              "JWT",
+              "AES",
+              "SSL",
+            ]}
             images={[
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fb263b6c5abd84569931e8700399f3490?format=webp&width=800",
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F30c844b22c4d451a85b34b73a28b4ff9?format=webp&width=800",
@@ -333,7 +375,15 @@ export default function Index() {
           <ProjectCard
             title="Tana’s Portfolio – Personal Developer Website"
             description="Personal portfolio showcasing background, skills, interactive project case studies, CV download, and contact. Fully responsive with modern UI/UX."
-            tags={["React", "Tailwind", "Framer Motion", "Netlify", "GitHub", "Figma", "Canva"]}
+            tags={[
+              "React",
+              "Tailwind",
+              "Framer Motion",
+              "Netlify",
+              "GitHub",
+              "Figma",
+              "Canva",
+            ]}
             images={[
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Ff38e12aa723f461db430c7c07ebb82f3?format=webp&width=800",
               "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F7f7a514136cd4d12a5415cb2f988d7bd?format=webp&width=800",
@@ -534,7 +584,13 @@ function ProjectCard({
       )}
       <div className="mt-3">
         {images && images.length > 0 ? (
-          <Dialog open={open} onOpenChange={(o)=>{ setOpen(o); if (o) setIdx(0); }}>
+          <Dialog
+            open={open}
+            onOpenChange={(o) => {
+              setOpen(o);
+              if (o) setIdx(0);
+            }}
+          >
             <DialogTrigger asChild>
               <Button variant="outline" className="clay-button">
                 <ExternalLink className="h-4 w-4" />
@@ -544,24 +600,52 @@ function ProjectCard({
             <DialogContent className="max-w-[900px] w-[90vw] sm:w-[80vw] max-h-[85vh] overflow-auto">
               <DialogHeader>
                 <DialogTitle>{title}</DialogTitle>
-                <DialogDescription className="text-sm">{description}</DialogDescription>
+                <DialogDescription className="text-sm">
+                  {description}
+                </DialogDescription>
               </DialogHeader>
               <div className="relative mt-2">
-                <img src={(images && images[idx]) ? images[idx] : images?.[0]} alt={`${title} screenshot ${idx + 1}`} loading="eager" decoding="async" className="mx-auto block h-auto max-h-[70vh] w-auto max-w-full object-contain rounded-lg border border-white/10 shadow bg-black/20" />
+                <img
+                  src={images && images[idx] ? images[idx] : images?.[0]}
+                  alt={`${title} screenshot ${idx + 1}`}
+                  loading="eager"
+                  decoding="async"
+                  className="mx-auto block h-auto max-h-[70vh] w-auto max-w-full object-contain rounded-lg border border-white/10 shadow bg-black/20"
+                />
                 {images && images.length > 1 && (
                   <div className="absolute inset-0 flex items-center justify-between px-2">
-                    <button aria-label="Previous" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{ e.stopPropagation(); setIdx((p)=> (p - 1 + images!.length) % images!.length); }}>
+                    <button
+                      aria-label="Previous"
+                      className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setIdx(
+                          (p) => (p - 1 + images!.length) % images!.length,
+                        );
+                      }}
+                    >
                       <ChevronLeft className="h-5 w-5" />
                     </button>
-                    <button aria-label="Next" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{ e.stopPropagation(); setIdx((p)=> (p + 1) % images!.length); }}>
+                    <button
+                      aria-label="Next"
+                      className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setIdx((p) => (p + 1) % images!.length);
+                      }}
+                    >
                       <ChevronRight className="h-5 w-5" />
                     </button>
                   </div>
                 )}
-                <div className="mt-2 text-center text-xs text-slate-300">{idx + 1} / {images?.length}</div>
+                <div className="mt-2 text-center text-xs text-slate-300">
+                  {idx + 1} / {images?.length}
+                </div>
               </div>
               <div className="mt-4 flex justify-end">
-                <DialogClose asChild><Button variant="outline">Close</Button></DialogClose>
+                <DialogClose asChild>
+                  <Button variant="outline">Close</Button>
+                </DialogClose>
               </div>
             </DialogContent>
           </Dialog>
