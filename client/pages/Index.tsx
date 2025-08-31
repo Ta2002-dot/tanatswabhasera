@@ -317,6 +317,14 @@ export default function Index() {
             title="CUT | VHOTAi – Online Voting Platform"
             description="Secure e‑voting system for CUT SRC elections with voter authentication, manifesto display, and real‑time results."
             tags={["React", "Bootstrap", "Node.js", "Express", "MySQL", "JWT", "AES", "SSL"]}
+            images={[
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fb263b6c5abd84569931e8700399f3490?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F30c844b22c4d451a85b34b73a28b4ff9?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F9f846f19018e400b9aa12d25f19b83da?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F220908ffa1c0496c8247f47e5bd0ee8b?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F8d3270eeaef84c81a168c6ba5c5196b2?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F1dc65774ac6a49558a0fdb4b0b6dc643?format=webp&width=800",
+            ]}
           />
         </div>
       </Section>
