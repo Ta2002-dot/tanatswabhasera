@@ -166,4 +166,7 @@
       );
     mix-blend-mode: screen;
   }
+  .heading-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-rose-300 via-red-500 to-orange-400 drop-shadow-[0_1px_6px_rgba(239,68,68,0.25)];
+  }
 }
