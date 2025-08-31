@@ -1,6 +1,7 @@
 import Section from "@/components/site/Section";
 import { Button } from "@/components/ui/button";
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogTrigger, AlertDialogCancel } from "@/components/ui/alert-dialog";
+import { useState } from "react";
 import {
   Mail,
   Phone,
@@ -10,6 +11,8 @@ import {
   Wrench,
   Shield,
   Server,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 export default function Index() {
@@ -482,6 +485,7 @@ function ProjectCard({
   tags: string[];
   images?: string[];
 }) {
+  const [idx, setIdx] = useState(0);
   return (
     <div className="clay-card p-6 flex flex-col gap-3">
       <div>
@@ -498,21 +502,6 @@ function ProjectCard({
           </span>
         ))}
       </div>
-      {images && images.length > 0 && (
-        <div className="mt-3 -mx-1 overflow-x-auto">
-          <div className="flex gap-3 px-1">
-            {images.map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt={`${title} screenshot ${i + 1}`}
-                className="h-28 w-auto rounded-lg border border-white/10 shadow"
-                loading={i === 0 ? "eager" : "lazy"}
-              />
-            ))}
-          </div>
-        </div>
-      )}
       <div className="mt-3">
         {images && images.length > 0 ? (
           <AlertDialog>
@@ -527,10 +516,19 @@ function ProjectCard({
                 <AlertDialogTitle>{title}</AlertDialogTitle>
                 <AlertDialogDescription>{description}</AlertDialogDescription>
               </AlertDialogHeader>
-              <div className="mt-2 grid gap-3 sm:grid-cols-2">
-                {images.map((src, i) => (
-                  <img key={i} src={src} alt={`${title} screenshot ${i + 1}`} className="w-full h-auto rounded-lg border border-white/10 shadow" loading={i === 0 ? "eager" : "lazy"} />
-                ))}
+              <div className="relative mt-2">
+                <img src={images![idx]} alt={`${title} screenshot ${idx + 1}`} className="w-full h-auto rounded-lg border border-white/10 shadow" />
+                {images && images.length > 1 && (
+                  <div className="absolute inset-0 flex items-center justify-between px-2">
+                    <button aria-label="Previous" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{e.stopPropagation(); setIdx((idx - 1 + images!.length) % images!.length);}}>
+                      <ChevronLeft className="h-5 w-5" />
+                    </button>
+                    <button aria-label="Next" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{e.stopPropagation(); setIdx((idx + 1) % images!.length);}}>
+                      <ChevronRight className="h-5 w-5" />
+                    </button>
+                  </div>
+                )}
+                <div className="mt-2 text-center text-xs text-slate-300">{idx + 1} / {images?.length}</div>
               </div>
               <div className="mt-4 flex justify-end">
                 <AlertDialogCancel>Close</AlertDialogCancel>
