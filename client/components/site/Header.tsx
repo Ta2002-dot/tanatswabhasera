@@ -107,6 +107,7 @@ export default function Header() {
               <MessageCircle className="h-4 w-4" />
             </a>
           </div>
+          <ThemeToggle />
           <Button
             asChild
             size="sm"
