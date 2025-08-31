@@ -449,10 +449,12 @@ function ProjectCard({
   title,
   description,
   tags,
+  images,
 }: {
   title: string;
   description: string;
   tags: string[];
+  images?: string[];
 }) {
   return (
     <div className="clay-card p-6 flex flex-col gap-3">
@@ -470,6 +472,21 @@ function ProjectCard({
           </span>
         ))}
       </div>
+      {images && images.length > 0 && (
+        <div className="mt-3 -mx-1 overflow-x-auto">
+          <div className="flex gap-3 px-1">
+            {images.map((src, i) => (
+              <img
+                key={i}
+                src={src}
+                alt={`${title} screenshot ${i + 1}`}
+                className="h-28 w-auto rounded-lg border border-white/10 shadow"
+                loading={i === 0 ? "eager" : "lazy"}
+              />
+            ))}
+          </div>
+        </div>
+      )}
       <div className="mt-3">
         <Button asChild variant="outline" className="clay-button">
           <a href="#contact">
