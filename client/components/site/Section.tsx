@@ -15,9 +15,9 @@ export default function Section({
   return (
     <section
       id={id}
-      className="relative overflow-hidden scroll-mt-24 py-12 sm:py-16 glossy-bg"
+      className="relative overflow-hidden scroll-mt-24 py-12 sm:py-16 bg-[hsl(210_20%_98%)] dark:glossy-bg"
     >
-      <div className="glossy-overlay" />
+      <div className="glossy-overlay hidden dark:block" />
       <div className="pointer-events-none absolute -left-24 top-10 h-40 w-40 bubble bubble-red opacity-40 hidden md:block -z-10" />
       <div className="pointer-events-none absolute -right-16 bottom-8 h-24 w-24 bubble bubble-red opacity-30 hidden md:block -z-10" />
       <div className="pointer-events-none absolute right-10 top-1/2 -translate-y-1/2 h-10 w-10 bubble bubble-red opacity-40 hidden md:block -z-10" />
