@@ -9,6 +9,7 @@ import {
   Linkedin,
   MessageCircle,
 } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const NAV = [
   { href: "#about", label: "About" },
