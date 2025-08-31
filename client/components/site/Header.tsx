@@ -20,7 +20,7 @@ const NAV = [
 
 export default function Header() {
   return (
-    <header className="relative w-full bg-slate-950/70 border-b border-white/10 text-slate-100">
+    <header className="fixed inset-x-0 top-0 z-50 w-full bg-slate-950/60 backdrop-blur-xl border-b border-white/10 text-slate-100">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <a
           href="#top"
