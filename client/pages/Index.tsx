@@ -486,6 +486,7 @@ function ProjectCard({
   tags: string[];
   images?: string[];
 }) {
+  const [open, setOpen] = useState(false);
   const [idx, setIdx] = useState(0);
   return (
     <div className="clay-card p-6 flex flex-col gap-3">
@@ -520,7 +521,7 @@ function ProjectCard({
       )}
       <div className="mt-3">
         {images && images.length > 0 ? (
-          <AlertDialog>
+          <AlertDialog open={open} onOpenChange={(o)=>{ setOpen(o); if (o) setIdx(0); }}>
             <AlertDialogTrigger asChild>
               <Button variant="outline" className="clay-button">
                 <ExternalLink className="h-4 w-4" />
@@ -536,13 +537,13 @@ function ProjectCard({
                 <X className="h-4 w-4" />
               </AlertDialogCancel>
               <div className="relative mt-2">
-                <img src={images![idx]} alt={`${title} screenshot ${idx + 1}`} className="max-h-[70vh] w-full object-contain rounded-lg border border-white/10 shadow bg-black/20" />
+                <img src={(images && images[idx]) ? images[idx] : images?.[0]} alt={`${title} screenshot ${idx + 1}`} loading="eager" decoding="async" className="mx-auto block h-auto max-h-[70vh] w-auto max-w-full object-contain rounded-lg border border-white/10 shadow bg-black/20" />
                 {images && images.length > 1 && (
                   <div className="absolute inset-0 flex items-center justify-between px-2">
-                    <button aria-label="Previous" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{e.stopPropagation(); setIdx((idx - 1 + images!.length) % images!.length);}}>
+                    <button aria-label="Previous" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{ e.stopPropagation(); setIdx((p)=> (p - 1 + images!.length) % images!.length); }}>
                       <ChevronLeft className="h-5 w-5" />
                     </button>
-                    <button aria-label="Next" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{e.stopPropagation(); setIdx((idx + 1) % images!.length);}}>
+                    <button aria-label="Next" className="rounded-full bg-black/40 p-2 text-white hover:bg-black/60" onClick={(e)=>{ e.stopPropagation(); setIdx((p)=> (p + 1) % images!.length); }}>
                       <ChevronRight className="h-5 w-5" />
                     </button>
                   </div>
