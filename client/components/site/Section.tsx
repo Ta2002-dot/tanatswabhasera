@@ -24,7 +24,7 @@ export default function Section({
       <div className="container mx-auto">
         {title && (
           <div className="mb-6 sm:mb-8 rounded-2xl p-4 glass-dark shadow-2xl">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold heading-gradient">
               {title}
             </h2>
             {description && (
