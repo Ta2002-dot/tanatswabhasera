@@ -197,7 +197,7 @@ export default function Index() {
       >
         <div className="space-y-8">
           <div>
-            <h3 className="mb-3 text-lg font-semibold">Core Skills</h3>
+            <h3 className="mb-3 text-lg font-semibold text-slate-100">Core Skills</h3>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <SkillCard
                 title="Frontend Development"
@@ -229,7 +229,7 @@ export default function Index() {
           </div>
 
           <div>
-            <h3 className="mb-3 text-lg font-semibold">Advanced Skills</h3>
+            <h3 className="mb-3 text-lg font-semibold text-slate-100">Advanced Skills</h3>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <SkillCard title="APIs" items={["RESTful APIs", "GraphQL"]} />
               <SkillCard title="Auth" items={["JWT", "OAuth"]} />
@@ -253,7 +253,7 @@ export default function Index() {
           </div>
 
           <div>
-            <h3 className="mb-3 text-lg font-semibold">UI/UX & Tools</h3>
+            <h3 className="mb-3 text-lg font-semibold text-slate-100">UI/UX & Tools</h3>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <SkillCard
                 title="Responsive Design"
@@ -265,7 +265,7 @@ export default function Index() {
           </div>
 
           <div>
-            <h3 className="mb-3 text-lg font-semibold">Soft Skills</h3>
+            <h3 className="mb-3 text-lg font-semibold text-slate-100">Soft Skills</h3>
             <SkillCard
               title="Soft Skills"
               items={[
