@@ -294,6 +294,14 @@ export default function Index() {
             title="PGLife – Off‑Campus Student Accommodation Portal (CUT)"
             description="Portal helping CUT students find safe, affordable housing with listings, filters, user profiles, and reviews."
             tags={["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP", "MySQL", "cPanel"]}
+            images={[
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fd5e8de9d3d164674a469291c0b968832?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fb80d25a016644b06be7d7148d2584257?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F5a5b85db142746e2b18db86591991d60?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Ff9f9d1852d404ba8ab41d4c9a041be03?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F131afb24b5a649c4b3fdc47215a34b72?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fe146244d0c4e4d8f85bf4d0fa6d21cb5?format=webp&width=800",
+            ]}
           />
           <ProjectCard
             title="CUT | VHOTAi – Online Voting Platform"
