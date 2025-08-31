@@ -290,6 +290,15 @@ export default function Index() {
             title="BikkeIT – Urban Bike Transportation Service"
             description="Built the digital presence for a Zimbabwean bike transport service, highlighting quality service, expert riders, and a safe, affordable city‑riding experience."
             tags={["React", "Tailwind", "Node.js", "Express", "MongoDB", "Netlify", "Heroku", "Figma"]}
+            images={[
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F76032994b15540b685935e81bd28b22c?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2Fa5843411def548dfaf54f5b99ac46527?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2d2ba77440a9485c8685c9ce8c0f7dcd?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F055b45dc4c6c42dc8498a711cf7a69c1?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F6a501432b68c4baab70b66c5744cbfe0?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F3d2b532c8fd448a0af9512f997995bfd?format=webp&width=800",
+              "https://cdn.builder.io/api/v1/image/assets%2F151040adad4644778a8544b549b97ad5%2F2320a9973a784c21aa9af27003124638?format=webp&width=800",
+            ]}
           />
           <ProjectCard
             title="PGLife – Off‑Campus Student Accommodation Portal (CUT)"
