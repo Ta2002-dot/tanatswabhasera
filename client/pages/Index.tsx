@@ -286,19 +286,19 @@ export default function Index() {
       >
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
-            title="Infrastructure Monitoring Dashboard"
-            description="Built a React + Express dashboard with real-time network/device status and alerting."
-            tags={["React", "Express", "WebSockets"]}
+            title="BikkeIT – Urban Bike Transportation Service"
+            description="Built the digital presence for a Zimbabwean bike transport service, highlighting quality service, expert riders, and a safe, affordable city‑riding experience."
+            tags={["React", "Tailwind", "Node.js", "Express", "MongoDB", "Netlify", "Heroku", "Figma"]}
           />
           <ProjectCard
-            title="ERP User Administration Tools"
-            description="Automated onboarding, password resets, and audit logging for ERP users."
-            tags={["Node.js", "SQL", "Security"]}
+            title="PGLife – Off‑Campus Student Accommodation Portal (CUT)"
+            description="Portal helping CUT students find safe, affordable housing with listings, filters, user profiles, and reviews."
+            tags={["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP", "MySQL", "cPanel"]}
           />
           <ProjectCard
-            title="Secure Backup & Restore"
-            description="Scripted reliable database backup/restore routines with integrity checks."
-            tags={["Bash", "Postgres", "DevOps"]}
+            title="CUT | VHOTAi – Online Voting Platform"
+            description="Secure e‑voting system for CUT SRC elections with voter authentication, manifesto display, and real‑time results."
+            tags={["React", "Bootstrap", "Node.js", "Express", "MySQL", "JWT", "AES", "SSL"]}
           />
         </div>
       </Section>
