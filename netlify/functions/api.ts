@@ -1,5 +1,5 @@
 import serverless from "serverless-http";
+import { createApiApp } from "./lib/app";
 
-import { createServer } from "../../server";
-
-export const handler = serverless(createServer());
+// A single function keeps all API routes behind /api/* and shares warm caches.
+export const handler = serverless(createApiApp());
